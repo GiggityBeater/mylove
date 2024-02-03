@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Will You Be My Valentine?</h1>
+  <button id="noButton" onclick="handleNo()">No</button>
+  <button id="yesButton" onclick="handleYes()">Yes</button>
+
+  <script>
+    function handleNo() {
+      var message = document.getElementById("message");
+      message.innerText = "You should reconsider...";
+      message.style.fontSize = "14px";
+      // Add more alternative phrases here if you'd like
+    }
+
+    function handleYes() {
+      var message = document.getElementById("message");
+      message.innerText = "YAY!";
+      message.style.fontSize = "24px";
+    }
+  </script>
+  <p id="message"></p>
+</body>
+</html>
